@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_list">
+
+
+    <Button
+        android:id="@+id/ex_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK"
+        android:layout_below="@+id/ex_max"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="#CEEFEFEF"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ex_button"
+        android:hint="ANSWER"
+        android:gravity="center"
+        android:background="#1DFFFFFF"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/ex_min"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="MIN"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="#D3FFFFFF"
+        android:layout_marginTop="100dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/ex_max"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/ex_min"
+        android:layout_marginTop="75dp"
+        android:hint="MAX"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="#D0FFFFFF"
+        android:inputType="number"
+        />
+</RelativeLayout>
